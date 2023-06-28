@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1024983393686-i3gfcd8if0pecblmk23f08kggtb6djoe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1024983393686-i3gfcd8if0pecblmk23f08kggtb6djoe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCmaB-SySE9bdUmz6KTdP8R3nTeX9Y7yow</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1024983393686</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Vasily-1.myNotes</string>
+	<key>PROJECT_ID</key>
+	<string>mynotes-1efd9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mynotes-1efd9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1024983393686:ios:799c67f6cb4cf60921e9b7</string>
+</dict>
+</plist>
