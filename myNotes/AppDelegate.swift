@@ -14,10 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
-struct YourApp: App {
+struct myNotes: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
     
     var body: some Scene {
         WindowGroup {
@@ -27,3 +26,4 @@ struct YourApp: App {
         }
     }
 }
+

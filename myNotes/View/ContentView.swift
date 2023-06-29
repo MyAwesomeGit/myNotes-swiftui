@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct ContentView: View {
     static let taskDateFormat: DateFormatter = {
         let formatter = DateFormatter()
@@ -9,7 +8,7 @@ struct ContentView: View {
     } ()
     
     @ObservedObject
-    var repository: NotesRepository = NotesRepository
+    var repository: NotesRepository = NotesRepository()
     
     @State
     var isNewNotePresented = false
@@ -50,3 +49,11 @@ struct ContentView: View {
     }
 }
 
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            ContentView().environment(\.colorScheme, .dark)
+        }
+    }
+}

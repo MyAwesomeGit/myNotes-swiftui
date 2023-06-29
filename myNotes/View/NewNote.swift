@@ -5,12 +5,14 @@ struct NewNote: View {
     @State private var bodyText: String = ""
     
     @Binding var isNewNotePresented: Bool
-    var repository = NotesRepository
+    var repository = NotesRepository()
     
     var body: some View {
         NavigationView{
             VStack(){
                 TextField("Title", text: $title)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextEditor(text: $bodyText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .navigationBarTitle("New Note", displayMode: .inline)
@@ -22,7 +24,6 @@ struct NewNote: View {
                 Image(systemName: "checkmark")
                     .font(.headline)
             }.disabled(title.isEmpty))
-            
         }
     }
 }

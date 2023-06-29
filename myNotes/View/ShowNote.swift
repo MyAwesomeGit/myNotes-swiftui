@@ -8,7 +8,7 @@ struct ShowNote: View {
     @State var title: String = ""
     @State var bodyText: String = ""
     
-    var repository = NotesRepository
+    var repository = NotesRepository()
     
     var body: some View {
         VStack(){

@@ -1,4 +1,4 @@
-import SwiftUI
+import Foundation
 import Firebase
 
 class NotesRepository: ObservableObject {
@@ -29,7 +29,7 @@ class NotesRepository: ObservableObject {
             "body": body
         ]) {( error ) in
             if error != nil {
-                print(error)
+                print("Error.")
             } else {
                 print("Updated.")
             }
@@ -60,17 +60,14 @@ class NotesRepository: ObservableObject {
                       let timestamp = data["date"] as? Timestamp,
                       let body = data["body"] as? String
                 else {
-                    return
+                    return nil
                 }
                 return Note(id: document.documentID,
                             title: title,
-                            timestamp: timestamp.dateValue(),
+                            date: timestamp.dateValue(),
                             body: body)
             }
         }
     }
     
-    
 }
-
-
